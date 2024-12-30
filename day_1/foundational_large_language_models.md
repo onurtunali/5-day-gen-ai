@@ -68,10 +68,10 @@ Input Sequence
 
 ```
 > Attention mechanism produces context dependent embeddings of the input sequences 
-> $$\text{Sequence of tokens } x = ( x_{1}, \dots , x_{n}) ~ x_{i} \in \R^{d} $$
-> $$\text{Query: } Q = X \cdot W_{q}, ~ X \in \R^{n \times d}, ~ W_{q} \in \R^{d \times k} $$ 
-> $$\text{Key: } K = X \cdot W_{k}, ~ X \in \R^{n \times d}, ~ W_{K} \in \R^{d \times k} $$ 
-> $$\text{Value: } V = X \cdot W_{v}, ~ X \in \R^{n \times d}, ~ W_{v} \in \R^{d \times k} $$ 
+> $$\text{Sequence of tokens } x = ( x_{1}, \dots , x_{n}) ~ x_{i} \in R^{d} $$
+> $$\text{Query: } Q = X \cdot W_{q}, ~ X \in R^{n \times d}, ~ W_{q} \in R^{d \times k} $$ 
+> $$\text{Key: } K = X \cdot W_{k}, ~ X \in R^{n \times d}, ~ W_{K} \in R^{d \times k} $$ 
+> $$\text{Value: } V = X \cdot W_{v}, ~ X \in R^{n \times d}, ~ W_{v} \in R^{d \times k} $$ 
 > 
 > $$Attention(Q,K,V) = softmax(\frac{ Q \times K}{\sqrt{d_{k}}}) \times V$$
 
