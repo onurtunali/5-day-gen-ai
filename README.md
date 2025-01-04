@@ -2,7 +2,11 @@
 
 Google's 5 day generative AI course notes and code practices, for syllabus [Kaggle](https://www.kaggle.com/learn-guide/5-day-genai). These are personal notes and might lack overall coherence to outside parties. 
 
-We are using [Amazon Products Dataset 2023](https://www.kaggle.com/datasets/asaniczka/amazon-products-dataset-2023-1-4m-products). Run `make kaggle` to automatically download data. You need kaggle api token in `~/.kaggle/kaggle.json` 
+# Setup
+
+Run `make create_environment` to install virtual environment. Instead of Kaggle notebooks, we are using local ones. Therefore, `GOOGLE_API_KEY` environment variables needs to be added to `.env` file.
+
+We are using [Amazon Products Dataset 2023](https://www.kaggle.com/datasets/asaniczka/amazon-products-dataset-2023-1-4m-products). Run `make kaggle` to automatically download data. You need kaggle api token in `~/.kaggle/kaggle.json` or you can just download zip file and extract into `data` directory.
 
 ```bash
 # make help commands

@@ -9,6 +9,7 @@ BUCKET = projects
 PROJECT_NAME = 5-day-gen-ai
 PYTHON_INTERPRETER = python3
 IMAGE_NAME = 5-day-gen-ai
+VERSION = latest
 
 
 ifeq (,$(shell which conda))
@@ -58,7 +59,7 @@ sync_models_from_s3:
 
 ## Build Docker image
 db:
-	docker build . -t ${PROJECT_NAME}:${VERSION} -t ${PROJECT_NAME}:latest
+	docker build . -t ${PROJECT_NAME}:latest
 
 ## Run Docker image
 dr:
@@ -66,7 +67,7 @@ dr:
 
 ## Build and run Docker image
 dbr:
-	docker build . -t ${PROJECT_NAME}:${VERSION} -t ${PROJECT_NAME}:latest
+	docker build . -t ${PROJECT_NAME}:latest
 	docker run --rm -p 8000:8000 --name $(PROJECT_NAME) ${PROJECT_NAME}:latest
 
 
