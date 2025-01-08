@@ -24,7 +24,7 @@ sync_models_to_s3   Upload models from s3 bucket
 
 # Whitepaper Links by Day
 
-| Day | Whitepapter |
+| Day | Whitepaper |
 | :--- | :--- |
 | Day 1 | [Foundational Large Language Models & Text Generation](https://drive.google.com/file/d/1mFvTxfuJg4VNutn9wBvH_URznLRkklb3/view)|
 | | [Embeddings & Vector Stores](https://drive.google.com/file/d/1jkQ_s8z4TQy85cVKwymhs4w3fP9PZ4xm/view) | 
